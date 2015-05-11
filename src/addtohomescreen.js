@@ -364,7 +364,7 @@ ath.Class.prototype = {
 		var now = Date.now();
 		var lastDisplayTime = this.session.lastDisplayTime;
 
-		if ( force !== true ) {
+		if ( !force ) {
 			// this is needed if autostart is disabled and you programmatically call the show() method
 			if ( !this.ready ) {
 				return;
